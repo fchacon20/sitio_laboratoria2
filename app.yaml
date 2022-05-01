@@ -1,19 +1,20 @@
 runtime: php
 env: flex
 
-runtime_config: document_root: public
+runtime_config:
+  document_root: public
 
 skip_files:
-	- .env
+  - .env
 
 automatic_scaling:
-	min_num_instances: 1
-	max_num_instances: 1
+  min_num_instances: 1
+  max_num_instances: 1
 
 resources:
-	cpu: 2
-	memory_gb: 4
-	disk_size_gb: 100
+  cpu: 2
+  memory_gb: 4
+  disk_size_gb: 100
 
 env_variables:
   APP_DEBUG: true
